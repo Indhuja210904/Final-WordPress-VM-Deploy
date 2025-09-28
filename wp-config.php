@@ -1,10 +1,14 @@
 <?php
-// Added for SQLite Integration
-define( 'DB_DIR', WP_CONTENT_DIR . '/database' );
-define( 'DB_FILE', 'database.sqlite' );
+/**
+ * The base configuration for WordPress
+ *
+ * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
+ *
+ * @package WordPress
+ */
 
-// ** Secret keys - Your new keys are here ** //
-ddefine('AUTH_KEY',         'U|b@|.. E;1ojpgAld[A/nWiz7vE^%&[]jiyeP7KOU+-Z;@_aH34b,m^l;5-`I+}');
+// ** Secret keys ** //
+define('AUTH_KEY',         'U|b@|.. E;1ojpgAld[A/nWiz7vE^%&[]jiyeP7KOU+-Z;@_aH34b,m^l;5-`I+}');
 define('SECURE_AUTH_KEY',  'BZu!3^9-;;dxHTwFKe4Vg%`RfDy[S IigW_T*WRX|D;5XdA5dX4vh9= Y[`VkT{m');
 define('LOGGED_IN_KEY',    '|~;j2`SYodOBh>Z}EZs(L@C&~R6_+cS&G/q>TVx!XF24|l0#O|pNx93i?a|[Z5$M');
 define('NONCE_KEY',        'AdXxLv|PwvtY:k]$QRcq~d+Yc| qT2A7np3T8FNJP-gEzGbO1Dt_5}!1rq}9(,)-');
@@ -22,6 +26,12 @@ $table_prefix = 'wp_';
  * For developers: WordPress debugging mode.
  */
 define( 'WP_DEBUG', false );
+
+/* Add any custom values between this line and the "stop editing" line. */
+
+// Added for SQLite Integration - MOVED TO THE CORRECT LOCATION
+define( 'DB_DIR', WP_CONTENT_DIR . '/database' );
+define( 'DB_FILE', 'database.sqlite' );
 
 /* That's all, stop editing! Happy publishing. */
 
